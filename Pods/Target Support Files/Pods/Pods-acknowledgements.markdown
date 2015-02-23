@@ -236,6 +236,10 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 See https://www.parse.com/about/terms
 
+## ParseFacebookUtils
+
+See https://www.parse.com/about/terms
+
 ## pop
 
 BSD License

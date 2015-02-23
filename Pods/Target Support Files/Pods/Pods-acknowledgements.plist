@@ -261,6 +261,14 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>See https://www.parse.com/about/terms</string>
+			<key>Title</key>
+			<string>ParseFacebookUtils</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>BSD License
 
 For Pop software
