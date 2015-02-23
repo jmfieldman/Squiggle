@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <FacebookSDK.h>
 #import <Parse/Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
 #import "LoginViewController.h"
 
 @interface AppDelegate ()
