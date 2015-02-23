@@ -33,22 +33,6 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
-    PFUser *testObject = [PFUser user];
-    testObject.username = @"Jason";
-    testObject.password = @"pass";
-    testObject.email    = @"email@email.com";
-    testObject[@"foo"]  = @"bar";
-    
-    [testObject signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            // Hooray! Let them use the app now.
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            // Show the errorString somewhere and let the user try again.
-        }
-    }];
-    
-    
     /* Create window */
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[LoginViewController alloc] init];
@@ -84,6 +68,7 @@
     
     // Logs 'install' and 'app activate' App Events.
     [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
