@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		355A357D1A9B8BA700F5E298 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A357C1A9B8BA700F5E298 /* LoginViewController.m */; };
+		3560A10C1A9CE558005E29DE /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560A10B1A9CE558005E29DE /* MainMenuViewController.m */; };
+		3560A10F1A9CEB15005E29DE /* FriendSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */; };
 		35B398581A9500BC00975CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B398571A9500BC00975CDD /* main.m */; };
 		35B3985B1A9500BC00975CDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3985A1A9500BC00975CDD /* AppDelegate.m */; };
 		35B398631A9500BC00975CDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B398621A9500BC00975CDD /* Images.xcassets */; };
@@ -30,6 +32,10 @@
 		1B976B99643148807166042C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		355A357B1A9B8BA700F5E298 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		355A357C1A9B8BA700F5E298 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3560A10A1A9CE558005E29DE /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		3560A10B1A9CE558005E29DE /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		3560A10D1A9CEB15005E29DE /* FriendSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendSelectViewController.h; sourceTree = "<group>"; };
+		3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendSelectViewController.m; sourceTree = "<group>"; };
 		35B398521A9500BC00975CDD /* Squiggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squiggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B398561A9500BC00975CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B398571A9500BC00975CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +82,10 @@
 			children = (
 				355A357B1A9B8BA700F5E298 /* LoginViewController.h */,
 				355A357C1A9B8BA700F5E298 /* LoginViewController.m */,
+				3560A10A1A9CE558005E29DE /* MainMenuViewController.h */,
+				3560A10B1A9CE558005E29DE /* MainMenuViewController.m */,
+				3560A10D1A9CEB15005E29DE /* FriendSelectViewController.h */,
+				3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3560A10F1A9CEB15005E29DE /* FriendSelectViewController.m in Sources */,
+				3560A10C1A9CE558005E29DE /* MainMenuViewController.m in Sources */,
 				35B3985B1A9500BC00975CDD /* AppDelegate.m in Sources */,
 				35B398581A9500BC00975CDD /* main.m in Sources */,
 				355A357D1A9B8BA700F5E298 /* LoginViewController.m in Sources */,

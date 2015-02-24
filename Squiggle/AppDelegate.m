@@ -30,6 +30,7 @@
     // Initialize Parse.
     [Parse setApplicationId:@"eYyMfkKM6lT24qymdFudxui7ZQBXtJt0piTRaCgC"
                   clientKey:@"98VREWSAoOKsYzEqHNwelaYlbCqa39M3dwIHY8Tq"];
+    [PFFacebookUtils initializeFacebook];
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
@@ -46,8 +47,9 @@
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation {
-    // attempt to extract a token from the url
-    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

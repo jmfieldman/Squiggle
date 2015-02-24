@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "MainMenuViewController.h"
 #import <FacebookSDK.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
@@ -34,6 +35,14 @@
     return self;
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+    if ([PFUser currentUser]) {
+        /* Show main menu */
+        UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[MainMenuViewController sharedInstance]];
+        [self presentViewController:controller animated:NO completion:nil];
+    }
+}
+
 
 - (void) handleFacebookLoginButton:(id)sender {
     
@@ -57,6 +66,11 @@
                     user[@"name"]      = result[@"name"];
                     user[@"gender"]    = result[@"gender"];
                     [user saveInBackground];
+                    
+                    /* Successfully gotten FB data */
+                    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[MainMenuViewController sharedInstance]];
+                    [self presentViewController:controller animated:YES completion:nil];
+                    
                 }
             }];
         }
