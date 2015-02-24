@@ -8,12 +8,14 @@ PODS:
     - Facebook-iOS-SDK (~> 3.20)
     - Parse (~> 1.6.3)
   - pop (1.0.7)
+  - SVProgressHUD (1.1.2)
 
 DEPENDENCIES:
   - Facebook-iOS-SDK
   - Parse
   - ParseFacebookUtils
   - pop
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
@@ -21,5 +23,6 @@ SPEC CHECKSUMS:
   Parse: 60d65108fe39da77ec16c9e51d74b4d296b21424
   ParseFacebookUtils: bb14e63862f920cc3f3864b0e373d6771b765255
   pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
 
 COCOAPODS: 0.34.2
