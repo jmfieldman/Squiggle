@@ -36,6 +36,7 @@
 		3560A10B1A9CE558005E29DE /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		3560A10D1A9CEB15005E29DE /* FriendSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendSelectViewController.h; sourceTree = "<group>"; };
 		3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendSelectViewController.m; sourceTree = "<group>"; };
+		3560A1161A9E2D59005E29DE /* Squiggle.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squiggle.pch; sourceTree = "<group>"; };
 		35B398521A9500BC00975CDD /* Squiggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squiggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B398561A9500BC00975CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B398571A9500BC00975CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 			children = (
 				35B398561A9500BC00975CDD /* Info.plist */,
 				35B398571A9500BC00975CDD /* main.m */,
+				3560A1161A9E2D59005E29DE /* Squiggle.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -419,6 +421,8 @@
 			baseConfigurationReference = D15FE836E56DBA982F62FA3C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Squiggle/Squiggle.pch;
 				INFOPLIST_FILE = Squiggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +434,8 @@
 			baseConfigurationReference = 1B976B99643148807166042C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Squiggle/Squiggle.pch;
 				INFOPLIST_FILE = Squiggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
