@@ -35,7 +35,7 @@
         _tableView.backgroundColor = [UIColor whiteColor];
         [self.view addSubview:_tableView];
         
-        
+        [[FriendManager sharedInstance] loadFriends];
         
     }
     return self;

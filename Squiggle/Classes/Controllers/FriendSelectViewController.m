@@ -36,11 +36,39 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [FriendManager sharedInstance].facebookFriends.count;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    NSDictionary *friend = [FriendManager sharedInstance].facebookFriends[indexPath.row];
+    
+    NSString *profile_pic = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture", friend[@"id"]];
+    NSLog(@"url: %@", profile_pic);
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Hello"];
+    cell.textLabel.text = friend[@"name"];
+
+    UIGraphicsBeginImageContext(CGSizeMake(60, 60));
+    UIImage *foo = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    cell.imageView.image = foo;
+    
+    //NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:profile_pic]];
+    //cell.imageView.image = [UIImage imageWithData:data];
+    
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:profile_pic] placeholderImage:foo];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    PFObject *game = [PFObject objectWithClassName:@"Game"];
+    game[@"player1"] = [PFUser currentUser];
+    game[@"player2"] = [FriendManager sharedInstance].parseFriends[indexPath.row];
+    //game[@"currentRound"] = ;
+    [game saveInBackground];
+    
 }
 
 @end

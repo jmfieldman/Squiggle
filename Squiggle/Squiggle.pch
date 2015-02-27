@@ -20,5 +20,6 @@
 #import <pop.h>
 
 #import "FriendManager.h"
+#import "UIImageView+WebCache.h"
 
 #endif

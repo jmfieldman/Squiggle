@@ -845,6 +845,17 @@
  */
 - (instancetype)fromPinWithName:(NSString *)name;
 
+/*!
+ @abstract Ignore ACLs when querying from the Local Datastore.
+
+ @discussion This is particularly useful when querying for objects with Role based ACLs set on them.
+
+ @warning Requires Local Datastore to be enabled.
+
+ @returns The same instance of `PFQuery` as the receiver. This allows method chaining.
+ */
+- (instancetype)ignoreACLs;
+
 ///--------------------------------------
 /// @name Advanced Settings
 ///--------------------------------------
