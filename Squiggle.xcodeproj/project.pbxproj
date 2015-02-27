@@ -10,6 +10,7 @@
 		355A357D1A9B8BA700F5E298 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A357C1A9B8BA700F5E298 /* LoginViewController.m */; };
 		3560A10C1A9CE558005E29DE /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560A10B1A9CE558005E29DE /* MainMenuViewController.m */; };
 		3560A10F1A9CEB15005E29DE /* FriendSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */; };
+		359FA3351AA0D4570012E1C6 /* FriendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 359FA3321AA0D4570012E1C6 /* FriendManager.m */; };
 		35B398581A9500BC00975CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B398571A9500BC00975CDD /* main.m */; };
 		35B3985B1A9500BC00975CDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B3985A1A9500BC00975CDD /* AppDelegate.m */; };
 		35B398631A9500BC00975CDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B398621A9500BC00975CDD /* Images.xcassets */; };
@@ -37,6 +38,8 @@
 		3560A10D1A9CEB15005E29DE /* FriendSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendSelectViewController.h; sourceTree = "<group>"; };
 		3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendSelectViewController.m; sourceTree = "<group>"; };
 		3560A1161A9E2D59005E29DE /* Squiggle.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squiggle.pch; sourceTree = "<group>"; };
+		359FA3311AA0D4570012E1C6 /* FriendManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendManager.h; sourceTree = "<group>"; };
+		359FA3321AA0D4570012E1C6 /* FriendManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendManager.m; sourceTree = "<group>"; };
 		35B398521A9500BC00975CDD /* Squiggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squiggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B398561A9500BC00975CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B398571A9500BC00975CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		355A35791A9B8BA700F5E298 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				359FA3301AA0D4570012E1C6 /* Models */,
+				359FA3331AA0D4570012E1C6 /* Helpers */,
+				359FA3341AA0D4570012E1C6 /* Views */,
 				355A357A1A9B8BA700F5E298 /* Controllers */,
 			);
 			path = Classes;
@@ -89,6 +95,29 @@
 				3560A10E1A9CEB15005E29DE /* FriendSelectViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		359FA3301AA0D4570012E1C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				359FA3311AA0D4570012E1C6 /* FriendManager.h */,
+				359FA3321AA0D4570012E1C6 /* FriendManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		359FA3331AA0D4570012E1C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		359FA3341AA0D4570012E1C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		35B398491A9500BC00975CDD = {
@@ -305,6 +334,7 @@
 				3560A10F1A9CEB15005E29DE /* FriendSelectViewController.m in Sources */,
 				3560A10C1A9CE558005E29DE /* MainMenuViewController.m in Sources */,
 				35B3985B1A9500BC00975CDD /* AppDelegate.m in Sources */,
+				359FA3351AA0D4570012E1C6 /* FriendManager.m in Sources */,
 				35B398581A9500BC00975CDD /* main.m in Sources */,
 				355A357D1A9B8BA700F5E298 /* LoginViewController.m in Sources */,
 			);

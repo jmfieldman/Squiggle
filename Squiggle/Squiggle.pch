@@ -19,4 +19,6 @@
 #import <AFNetworking.h>
 #import <pop.h>
 
+#import "FriendManager.h"
+
 #endif
